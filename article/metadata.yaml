@@ -1,0 +1,72 @@
+# ReScience C metadata (template: github.com/ReScience/template, commit 0978d0e)
+title: "[\\textasciitilde{}Re] Leave-One-Out Stable Conformal Prediction"
+
+authors:
+  - name: Nittin Murthi Dhekshinamoorthy
+    orcid:
+    email: ndhek2@illinois.edu
+    affiliations: 1,*
+
+affiliations:
+  - code:    1
+    name:    University of Illinois Urbana-Champaign
+    address: Urbana, Illinois, USA
+
+keywords: conformal prediction, algorithmic stability, leave-one-out, replication, Python
+
+code:
+  - url: https://github.com/nittin-murthi/rescience-loo-stab
+  - git: https://github.com/nittin-murthi/rescience-loo-stab.git
+  # Branch ref of this public snapshot, not a commit SHA. The SHA of the commit
+  # that contains this file cannot be stored in the file itself.
+  - tree: cursor/publish-sanitized-snapshot-e9a8
+  - doi:
+  - swh:
+
+data:
+  - url:
+  - doi:
+
+replication:
+ - cite: "Kiljae Lee and Yuan Zhang. Leave-One-Out Stable Conformal Prediction. In The Thirteenth International Conference on Learning Representations (ICLR 2025), pp. 16210-16234, 2025."
+ - bib:  lee2025loo
+ - url:  https://openreview.net/forum?id=Bt1vnCnAVS
+ - doi:  10.48550/arXiv.2504.12189
+
+abstract: "This study reports a partial replication of Leave-One-Out Stable Conformal Prediction (LOO-StabCP) by Lee and Zhang (ICLR 2025). The primary methods were independently implemented in Python based on the paper; the public repository and conference supplement were then used to diagnose differences; the kernel implementation was added after consulting the supplement. Eight claims are evaluated across synthetic and real-data regression, neural networks, kernels, derandomized split conformal and screening. Empirical coverage and runtime comparisons for linear models, and shorter SGD intervals than replace-one stable conformal prediction, support the original claims. Numerical replication depends on settings not fully specified in the text, notably signal scaling, feature normalization, network training and kernel parameters. Under the recovered simulation settings, mean lengths differ from the original table by at most 2.4\\%. Comparative claims are mixed: LOO-StabCP has less variable lengths than split conformal but is not uniformly shorter, and its length advantage over derandomized methods reverses for real-data SGD under the text setup. Neural-network and kernel results are reproduced with qualifications; response centering largely removes the kernel gain in this synthetic design. In screening, observed mean false discovery proportions remain below their targets, but the power advantage over cfBH does not persist at q = 0.1 or 0.2 when a missing factor R = 15 is restored to the training-point stability bound. The study distinguishes numerical agreement from statistical equivalence and documents assumptions and unresolved discrepancies. The original authors were not contacted."
+
+bibliography: bibliography.bib
+
+type: Replication
+domain: Machine Learning
+language: Python
+
+review:
+  - url:
+
+contributors:
+  - name:
+    orcid:
+    role: editor
+  - name:
+    orcid:
+    role: reviewer
+  - name:
+    orcid:
+    role: reviewer
+
+dates:
+  - received:
+  - accepted:
+  - published:
+
+article:
+  - number:
+  - doi:
+  - url:
+
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume:
+  - issue:

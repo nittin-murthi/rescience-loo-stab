@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+paper/src.tar.gz
+article/build/
+data/authors_results/
+data/screening/
+data/authors_supplement/
+# Boston Housing CSVs are fetched by scripts/get_data.sh (source mirror has no license file).
+data/BostonHousing.csv
+data/boston.csv
